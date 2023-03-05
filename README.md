@@ -25,6 +25,7 @@ Press CTRL+C to quit
  * Debugger is active!
  * Debugger PIN: 792-532-727
  ```
+ 看到這兩行
  ```
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.0.15:5000
