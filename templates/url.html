@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL界的算命仙</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <base href="../static/">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .col {
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 10px;
+            box-sizing: border-box;
+            width: 60vw;
+            max-width: 500px;
+            align-items: center;
+            border: 3px #000 solid;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: #97f5fc 0 0 50px;
+        }
+
+        .title {
+            text-align: center;
+            width: 100%;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        #url {
+            font-family: 'Noto Sans TC', sans-serif;
+            height: 40px;
+            width: 100%;
+            font-size: 20px;
+            border: none;
+            border-bottom: 2px #000 solid;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        #url:focus {
+            outline: none;
+        }
+
+        .under {
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .last {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 300;
+            height: 40px;
+            width: calc(50% - 5px);
+            border-radius: 0;
+            outline: 0;
+            border: 2px black solid;
+            background-color: #97f5fc;
+            border-radius: 10px;
+            display: block;
+            transition: .2s;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .last:hover {
+            background-color: #00eeff;
+            cursor: pointer;
+        }
+
+        #reset {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col">
+        <h1 class="title">URL界的算命仙</h1>
+        <form action="/result" method="get">
+            <input type="url" name="url" id="url" placeholder="請輸入網址">
+            <div class="under">
+                <input type="reset" value="清除" class="last" id="reset">
+                <input type="submit" value="提交" class="last"><br>
+            </div>
+
+        </form>
+    </div>
+</body>
