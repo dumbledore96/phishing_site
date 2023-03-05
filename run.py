@@ -37,14 +37,6 @@ app=Flask(__name__)
 def get_html():
     return render_template('url.html')
 
-def htmlspecialchars(text):
-    return (
-        text.replace("&", "&amp;").
-        replace('"', "&quot;").
-        replace("<", "&lt;").
-        replace(">", "&gt;")
-    )
-
 @app.route('/result',methods = ['GET'])
 def print_result():
     url=request.values.get('url')
